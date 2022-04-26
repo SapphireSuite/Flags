@@ -1,0 +1,8 @@
+// Copyright(c) 2022 Sapphire's Suite. All Rights Reserved.
+
+#ifndef SAPPHIRE_COLLECTIONS_FLAGS_GUARD
+#define SAPPHIRE_COLLECTIONS_FLAGS_GUARD
+
+#include <SA/Flags/Flags.hpp>
+
+#endif // GUARD
