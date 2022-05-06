@@ -3,7 +3,6 @@
 cmake_minimum_required(VERSION 3.16)
 
 
-
 # Project
 
 project(SA_Flags)
