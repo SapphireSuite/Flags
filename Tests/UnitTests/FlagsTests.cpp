@@ -4,7 +4,7 @@
 
 #include <SA/Flags/Flags.hpp>
 
-namespace Sa::UT::FlagsTests
+namespace SA::UT::FlagsTests
 {
 	enum class TestFlags : uint8_t
 	{

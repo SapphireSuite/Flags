@@ -7,7 +7,16 @@
 
 #include <cstdint>
 
-namespace Sa
+/**
+*	\file IntSize.hpp
+*
+*	\brief \b Definition of helper class to get int type of specified size.
+*
+*	\ingroup Flags
+*	\{
+*/
+
+namespace SA
 {
 	/**
 	*	\brief \e Getter of the \c int type of the specified \b size (octet).
@@ -104,5 +113,7 @@ namespace Sa
 	template <uint8_t size>
 	using UIntOfSize = typename IntSize<size>::UType;
 }
+
+/** \} */
 
 #endif // GUARD

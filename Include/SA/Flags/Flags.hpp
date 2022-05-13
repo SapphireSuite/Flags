@@ -18,7 +18,7 @@
 *	\{
 */
 
-namespace Sa
+namespace SA
 {
 	/**
 	*	\brief \e Template class for \b bit-flags enum management.
@@ -296,37 +296,37 @@ namespace Sa
 	*	\param[in] _enumType	Type of enum.
 	*/
 	#define SA_DEFINE_ENUM_FLAGS(_enumType)\
-	inline constexpr Sa::UIntOfSize<sizeof(_enumType)> operator|(_enumType _lhs, _enumType _rhs) noexcept\
+	inline constexpr SA::UIntOfSize<sizeof(_enumType)> operator|(_enumType _lhs, _enumType _rhs) noexcept\
 	{\
-		return static_cast<Sa::UIntOfSize<sizeof(_enumType)>>(_lhs) | static_cast<Sa::UIntOfSize<sizeof(_enumType)>>(_rhs);\
+		return static_cast<SA::UIntOfSize<sizeof(_enumType)>>(_lhs) | static_cast<SA::UIntOfSize<sizeof(_enumType)>>(_rhs);\
 	}\
 	\
-	inline constexpr Sa::UIntOfSize<sizeof(_enumType)> operator|(Sa::UIntOfSize<sizeof(_enumType)> _lhs, _enumType _rhs) noexcept\
+	inline constexpr SA::UIntOfSize<sizeof(_enumType)> operator|(SA::UIntOfSize<sizeof(_enumType)> _lhs, _enumType _rhs) noexcept\
 	{\
-		return _lhs | static_cast<Sa::UIntOfSize<sizeof(_enumType)>>(_rhs);\
+		return _lhs | static_cast<SA::UIntOfSize<sizeof(_enumType)>>(_rhs);\
 	}\
 	\
-	inline constexpr Sa::UIntOfSize<sizeof(_enumType)> operator&(_enumType _lhs, _enumType _rhs) noexcept\
+	inline constexpr SA::UIntOfSize<sizeof(_enumType)> operator&(_enumType _lhs, _enumType _rhs) noexcept\
 	{\
-		return static_cast<Sa::UIntOfSize<sizeof(_enumType)>>(_lhs) & static_cast<Sa::UIntOfSize<sizeof(_enumType)>>(_rhs);\
+		return static_cast<SA::UIntOfSize<sizeof(_enumType)>>(_lhs) & static_cast<SA::UIntOfSize<sizeof(_enumType)>>(_rhs);\
 	}\
-	inline constexpr Sa::UIntOfSize<sizeof(_enumType)> operator&(Sa::UIntOfSize<sizeof(_enumType)> _lhs, _enumType _rhs) noexcept\
+	inline constexpr SA::UIntOfSize<sizeof(_enumType)> operator&(SA::UIntOfSize<sizeof(_enumType)> _lhs, _enumType _rhs) noexcept\
 	{\
-		return _lhs & static_cast<Sa::UIntOfSize<sizeof(_enumType)>>(_rhs);\
-	}\
-	\
-	inline constexpr Sa::UIntOfSize<sizeof(_enumType)> operator^(_enumType _lhs, _enumType _rhs) noexcept\
-	{\
-		return static_cast<Sa::UIntOfSize<sizeof(_enumType)>>(_lhs) ^ static_cast<Sa::UIntOfSize<sizeof(_enumType)>>(_rhs);\
+		return _lhs & static_cast<SA::UIntOfSize<sizeof(_enumType)>>(_rhs);\
 	}\
 	\
-	inline constexpr Sa::UIntOfSize<sizeof(_enumType)> operator^(Sa::UIntOfSize<sizeof(_enumType)> _lhs, _enumType _rhs) noexcept\
+	inline constexpr SA::UIntOfSize<sizeof(_enumType)> operator^(_enumType _lhs, _enumType _rhs) noexcept\
 	{\
-		return _lhs ^ static_cast<Sa::UIntOfSize<sizeof(_enumType)>>(_rhs);\
+		return static_cast<SA::UIntOfSize<sizeof(_enumType)>>(_lhs) ^ static_cast<SA::UIntOfSize<sizeof(_enumType)>>(_rhs);\
 	}\
-	inline constexpr Sa::UIntOfSize<sizeof(_enumType)> operator~(_enumType _enum) noexcept\
+	\
+	inline constexpr SA::UIntOfSize<sizeof(_enumType)> operator^(SA::UIntOfSize<sizeof(_enumType)> _lhs, _enumType _rhs) noexcept\
 	{\
-		return ~static_cast<Sa::UIntOfSize<sizeof(_enumType)>>(_enum);\
+		return _lhs ^ static_cast<SA::UIntOfSize<sizeof(_enumType)>>(_rhs);\
+	}\
+	inline constexpr SA::UIntOfSize<sizeof(_enumType)> operator~(_enumType _enum) noexcept\
+	{\
+		return ~static_cast<SA::UIntOfSize<sizeof(_enumType)>>(_enum);\
 	}
 }
 
