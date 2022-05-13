@@ -332,6 +332,11 @@ namespace SA
 
 #include <SA/Flags/Flags.inl>
 
+/**
+*	\example FlagsTests.cpp
+*	Examples and Unitary Tests for Flags.
+*/
+
 
 /** \} */
 
