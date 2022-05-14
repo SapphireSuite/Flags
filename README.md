@@ -4,24 +4,28 @@
 [![Windows](https://github.com/SapphireSuite/Flags/actions/workflows/test_windows.yml/badge.svg)](https://github.com/SapphireSuite/Flags/actions/workflows/test_windows.yml)
 [![MacOS](https://github.com/SapphireSuite/Flags/actions/workflows/test_macos.yml/badge.svg)](https://github.com/SapphireSuite/Flags/actions/workflows/test_macos.yml)
 
-Sapphire Suite's C++ Flags library.
-
-
-## Documentations
-
+Sapphire Suite's C++ Flags library.\
 Links to the **official** [documentation](https://SapphireSuite.github.io/Flags/).
 
-### CMake
-Add the subdirectory to the build tree with
+
+
+# How To Use
+
+### Collection Header
+```cpp
+#include <SA/Collections/Flags>
+```
+
+
+## CMake
+Add the subdirectory to the build tree and link the library to your taget:
 ```cmake
 add_subdirectory(Flags)
-```
-and link the library to your taget with
-```cmake
 target_link_libraries(<target> <link> SA_Flags)
 ```
 
-### How To Use
+
+## Flags
 Declare your enum with **bit-flag values** and call the macro *SA_DEFINE_ENUM_FLAGS* following the declaration.
 
 ```cpp
@@ -50,6 +54,7 @@ flags.Remove(MyEnum::MyValue2);
 For more examples, see [Flags Unit Tests](https://github.com/SapphireSuite/Flags/blob/main/Tests/UnitTests/FlagsTests.cpp)
 
 
-## Authors
+
+# Authors
 
 **Maxime "mrouffet" ROUFFET** - main developer (maximerouffet@gmail.com)
