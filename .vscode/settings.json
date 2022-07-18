@@ -1,6 +1,5 @@
 {
-    "cmake.generator": "Ninja",
-    "cmake.setBuildTypeOnMultiConfig": true,
+    "editor.formatOnSave": true,
     "workbench.colorCustomizations": {
 		"activityBar.activeBackground": "#be15b2",
 		"activityBar.activeBorder": "#a1ac13",
@@ -21,5 +20,4 @@
 		"titleBar.inactiveForeground": "#e7e7e799"
 	},
     "peacock.color": "#901087",
-    "editor.formatOnSave": true,
 }
